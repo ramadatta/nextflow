@@ -1,4 +1,4 @@
-(Earliest nextflow scripts go bottom)
+(Most latest nextflow script on top - Earliest scripts go bottom)
 
 ### minipipeline-sr3.nf
 
