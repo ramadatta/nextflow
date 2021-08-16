@@ -1,10 +1,9 @@
 ## This Nextflow pipeline does 1) FastQC 2) Trims adapters and quality filtering on Illumina reads 3) Runs Spades assembly
 
-
-
 #!/usr/bin/env nextflow
  
 params.reads = "/data01/nextflow_test/shortReads_fastq_file_processing/Illumina_data/*_{1,2}.fq.gz"
+
 params.in = "/data01/nextflow_test/shortReads_fastq_file_processing/Illumina_data/*.fq.gz"
 sequences = file(params.in)
 
