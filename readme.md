@@ -5,7 +5,7 @@
 This Nextflow pipeline does 
 1) FastQC 
 2) Trims adapters and quality filtering on Illumina reads 
-3) Runs Spades assembly
+3) Runs short read Spades assembly
 
 ```
 $ time nextflow minipipeline-sr3.nf 
