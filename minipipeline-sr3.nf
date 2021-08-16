@@ -9,7 +9,7 @@ sequences = file(params.in)
 
 
 /*
- * do a fastqc on the reads
+//process 1: Run FastQC on raw reads
  */
  
 process fastqc{
@@ -35,8 +35,10 @@ Channel
     .ifEmpty { error "Cannot find any reads matching: ${params.reads}"  }
     .set { read_pairs } 
  
+/*
+//process 2: Run Adapter and quality trimming on raw reads
+*/
 
-//process 1: Adapter and quality trimming
 
 process bbduk {
         tag {pair_id}
@@ -56,8 +58,9 @@ process bbduk {
          """
 }
 
-//process 2: Spades assembly
-
+/*
+//process 3: Run SPAdes assembly using pre-processed reads
+*/
 process spades {
         tag {pair_id}
         publishDir 'spades_output'
