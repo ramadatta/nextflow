@@ -14,6 +14,17 @@ Launching `minipipeline-sr3.nf` [determined_bose] - revision: 73d0117dc7
 executor >  local (12)
 [c6/02f475] process > fastqc (null)                                 [100%] 6 of 6 ✔
 [80/8823d3] process > bbduk (N16003_DDMS210004241-1a_HFMWLDSX2_L2)  [100%] 3 of 3 ✔
+[09/8692af] process > spades (N16003_DDMS210004241-1a_HFMWLDSX2_L2) [100%] 3 of 3 ✔
+Completed at: 16-Aug-2021 16:04:23
+Duration    : 2h 42m 50s
+CPU hours   : 7.2
+Succeeded   : 12
+
+
+
+real	162m52.445s
+user	434m33.407s
+sys	7m49.247s
 ```
 
 
