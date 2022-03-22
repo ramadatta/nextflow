@@ -18,3 +18,8 @@ process index {
     """
 }
 ```
+### 2. Run script with docker
+
+```
+nextflow script2_1.nf -with-docker
+```
